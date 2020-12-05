@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="utf-8"/>
+<title>Blugdame</title> <link rel="stylesheet" href="gameStyles.css">
+</head>
+<body>
+<h1 style="color:red;font-family:Algerian; text-align: center; font-size: 48px;">Blood for Bludd, the Blood God (of Blood)!</h1>
+
+<h2 style="color:red; font-family:Calibri; text-align: center;"
+onclick="this.style.display='none';" title="Don't need to read this?
+Click me and I'll disappear!">
+Mouse over any button to learn more about what it does.
+Want to start a new game? Just refresh the page!</h2>
+
+<!--rgb(87,206,235) is the color code for sky blue.-->
+
+<button class='piece' onclick='MOVE=getPieceByName(pieceSelected).move(Bludd.row, Bludd.col);
+activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1];'>
+<img class="Bludd" id="Bludd" src='.\viking pics\Bludd.png' height='100' width='100' 
+alt="Bludd, Blood God" title="Bludd, the Blood God (of Blood!)">
+</button>
+
+
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c1' id='r1c1' src='./viking pics/skyblue.jpg' title='r1c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c2' id='r1c2' src='./viking pics/bloodred.jpg' title='r1c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c3' id='r1c3' src='./viking pics/skyblue.jpg' title='r1c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c4' id='r1c4' src='./viking pics/bloodred.jpg' title='r1c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c5' id='r1c5' src='./viking pics/skyblue.jpg' title='r1c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c6' id='r1c6' src='./viking pics/bloodred.jpg' title='r1c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c7' id='r1c7' src='./viking pics/skyblue.jpg' title='r1c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(1, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r1c8' id='r1c8' src='./viking pics/bloodred.jpg' title='r1c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c1' id='r2c1' src='./viking pics/bloodred.jpg' title='r2c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c2' id='r2c2' src='./viking pics/skyblue.jpg' title='r2c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c3' id='r2c3' src='./viking pics/bloodred.jpg' title='r2c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c4' id='r2c4' src='./viking pics/skyblue.jpg' title='r2c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c5' id='r2c5' src='./viking pics/bloodred.jpg' title='r2c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c6' id='r2c6' src='./viking pics/skyblue.jpg' title='r2c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c7' id='r2c7' src='./viking pics/bloodred.jpg' title='r2c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(2, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r2c8' id='r2c8' src='./viking pics/skyblue.jpg' title='r2c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c1' id='r3c1' src='./viking pics/skyblue.jpg' title='r3c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c2' id='r3c2' src='./viking pics/bloodred.jpg' title='r3c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c3' id='r3c3' src='./viking pics/skyblue.jpg' title='r3c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c4' id='r3c4' src='./viking pics/bloodred.jpg' title='r3c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c5' id='r3c5' src='./viking pics/skyblue.jpg' title='r3c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c6' id='r3c6' src='./viking pics/bloodred.jpg' title='r3c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c7' id='r3c7' src='./viking pics/skyblue.jpg' title='r3c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(3, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r3c8' id='r3c8' src='./viking pics/bloodred.jpg' title='r3c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c1' id='r4c1' src='./viking pics/bloodred.jpg' title='r4c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c2' id='r4c2' src='./viking pics/skyblue.jpg' title='r4c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c3' id='r4c3' src='./viking pics/bloodred.jpg' title='r4c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c4' id='r4c4' src='./viking pics/skyblue.jpg' title='r4c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c5' id='r4c5' src='./viking pics/bloodred.jpg' title='r4c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c6' id='r4c6' src='./viking pics/skyblue.jpg' title='r4c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c7' id='r4c7' src='./viking pics/bloodred.jpg' title='r4c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(4, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r4c8' id='r4c8' src='./viking pics/skyblue.jpg' title='r4c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c1' id='r5c1' src='./viking pics/skyblue.jpg' title='r5c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c2' id='r5c2' src='./viking pics/bloodred.jpg' title='r5c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c3' id='r5c3' src='./viking pics/skyblue.jpg' title='r5c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c4' id='r5c4' src='./viking pics/bloodred.jpg' title='r5c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c5' id='r5c5' src='./viking pics/skyblue.jpg' title='r5c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c6' id='r5c6' src='./viking pics/bloodred.jpg' title='r5c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c7' id='r5c7' src='./viking pics/skyblue.jpg' title='r5c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(5, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r5c8' id='r5c8' src='./viking pics/bloodred.jpg' title='r5c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c1' id='r6c1' src='./viking pics/bloodred.jpg' title='r6c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c2' id='r6c2' src='./viking pics/skyblue.jpg' title='r6c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c3' id='r6c3' src='./viking pics/bloodred.jpg' title='r6c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c4' id='r6c4' src='./viking pics/skyblue.jpg' title='r6c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c5' id='r6c5' src='./viking pics/bloodred.jpg' title='r6c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c6' id='r6c6' src='./viking pics/skyblue.jpg' title='r6c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c7' id='r6c7' src='./viking pics/bloodred.jpg' title='r6c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(6, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r6c8' id='r6c8' src='./viking pics/skyblue.jpg' title='r6c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c1' id='r7c1' src='./viking pics/skyblue.jpg' title='r7c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c2' id='r7c2' src='./viking pics/bloodred.jpg' title='r7c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c3' id='r7c3' src='./viking pics/skyblue.jpg' title='r7c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c4' id='r7c4' src='./viking pics/bloodred.jpg' title='r7c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c5' id='r7c5' src='./viking pics/skyblue.jpg' title='r7c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c6' id='r7c6' src='./viking pics/bloodred.jpg' title='r7c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c7' id='r7c7' src='./viking pics/skyblue.jpg' title='r7c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(7, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r7c8' id='r7c8' src='./viking pics/bloodred.jpg' title='r7c8'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 1);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c1' id='r8c1' src='./viking pics/bloodred.jpg' title='r8c1'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 2);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c2' id='r8c2' src='./viking pics/skyblue.jpg' title='r8c2'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 3);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c3' id='r8c3' src='./viking pics/bloodred.jpg' title='r8c3'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 4);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c4' id='r8c4' src='./viking pics/skyblue.jpg' title='r8c4'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 5);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c5' id='r8c5' src='./viking pics/bloodred.jpg' title='r8c5'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 6);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c6' id='r8c6' src='./viking pics/skyblue.jpg' title='r8c6'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 7);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c7' id='r8c7' src='./viking pics/bloodred.jpg' title='r8c7'>
+</button>
+<button class='square' onclick='MOVE=getPieceByName(pieceSelected).move(8, 8);
+ activePlayer=MOVE[0]; PlayerRotationIndex=MOVE[1]'>
+<img class='squareIMG r8c8' id='r8c8' src='./viking pics/skyblue.jpg' title='r8c8'>
+</button>
+
+
+<button class='piece' onclick='pieceSelection("redQueen");'>
+<img class='pieceIMG red Queen' id='redQueen' src='./red/red queen.png' title='redQueen'>
+</button>
+<button class='piece' onclick='pieceSelection("redKing");'>
+<img class='pieceIMG red King' id='redKing' src='./red/red king.png' title='redKing'>
+</button>
+<button class='piece' onclick='pieceSelection("redRook1");'>
+<img class='pieceIMG red Rook' id='redRook1' src='./red/red Rook.png' title='redRook1'>
+</button>
+<button class='piece' onclick='pieceSelection("redBishop1");'>
+<img class='pieceIMG red Bishop' id='redBishop1' src='./red/red Bishop.png' title='redBishop1'>
+</button>
+<button class='piece' onclick='pieceSelection("redKnight1");'>
+<img class='pieceIMG red Knight' id='redKnight1' src='./red/red Knight.png' title='redKnight1'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn1");'>
+<img class='pieceIMG red Pawn' id='redPawn1' src='./red/red pawn.png' title='redPawn1'>
+</button>
+<button class='piece' onclick='pieceSelection("blueQueen");'>
+<img class='pieceIMG blue Queen' id='blueQueen' src='./blue/blue queen.png' title='blueQueen'>
+</button>
+<button class='piece' onclick='pieceSelection("blueKing");'>
+<img class='pieceIMG blue King' id='blueKing' src='./blue/blue king.png' title='blueKing'>
+</button>
+<button class='piece' onclick='pieceSelection("blueRook1");'>
+<img class='pieceIMG blue Rook' id='blueRook1' src='./blue/blue Rook.png' title='blueRook1'>
+</button>
+<button class='piece' onclick='pieceSelection("blueBishop1");'>
+<img class='pieceIMG blue Bishop' id='blueBishop1' src='./blue/blue Bishop.png' title='blueBishop1'>
+</button>
+<button class='piece' onclick='pieceSelection("blueKnight1");'>
+<img class='pieceIMG blue Knight' id='blueKnight1' src='./blue/blue Knight.png' title='blueKnight1'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn1");'>
+<img class='pieceIMG blue Pawn' id='bluePawn1' src='./blue/blue pawn.png' title='bluePawn1'>
+</button>
+<button class='piece' onclick='pieceSelection("redRook2");'>
+<img class='pieceIMG red Rook' id='redRook2' src='./red/red Rook.png' title='redRook2'>
+</button>
+<button class='piece' onclick='pieceSelection("redBishop2");'>
+<img class='pieceIMG red Bishop' id='redBishop2' src='./red/red Bishop.png' title='redBishop2'>
+</button>
+<button class='piece' onclick='pieceSelection("redKnight2");'>
+<img class='pieceIMG red Knight' id='redKnight2' src='./red/red Knight.png' title='redKnight2'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn2");'>
+<img class='pieceIMG red Pawn' id='redPawn2' src='./red/red pawn.png' title='redPawn2'>
+</button>
+<button class='piece' onclick='pieceSelection("blueRook2");'>
+<img class='pieceIMG blue Rook' id='blueRook2' src='./blue/blue Rook.png' title='blueRook2'>
+</button>
+<button class='piece' onclick='pieceSelection("blueBishop2");'>
+<img class='pieceIMG blue Bishop' id='blueBishop2' src='./blue/blue Bishop.png' title='blueBishop2'>
+</button>
+<button class='piece' onclick='pieceSelection("blueKnight2");'>
+<img class='pieceIMG blue Knight' id='blueKnight2' src='./blue/blue Knight.png' title='blueKnight2'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn2");'>
+<img class='pieceIMG blue Pawn' id='bluePawn2' src='./blue/blue pawn.png' title='bluePawn2'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn3");'>
+<img class='pieceIMG red Pawn' id='redPawn3' src='./red/red pawn.png' title='redPawn3'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn3");'>
+<img class='pieceIMG blue Pawn' id='bluePawn3' src='./blue/blue pawn.png' title='bluePawn3'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn4");'>
+<img class='pieceIMG red Pawn' id='redPawn4' src='./red/red pawn.png' title='redPawn4'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn4");'>
+<img class='pieceIMG blue Pawn' id='bluePawn4' src='./blue/blue pawn.png' title='bluePawn4'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn5");'>
+<img class='pieceIMG red Pawn' id='redPawn5' src='./red/red pawn.png' title='redPawn5'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn5");'>
+<img class='pieceIMG blue Pawn' id='bluePawn5' src='./blue/blue pawn.png' title='bluePawn5'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn6");'>
+<img class='pieceIMG red Pawn' id='redPawn6' src='./red/red pawn.png' title='redPawn6'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn6");'>
+<img class='pieceIMG blue Pawn' id='bluePawn6' src='./blue/blue pawn.png' title='bluePawn6'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn7");'>
+<img class='pieceIMG red Pawn' id='redPawn7' src='./red/red pawn.png' title='redPawn7'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn7");'>
+<img class='pieceIMG blue Pawn' id='bluePawn7' src='./blue/blue pawn.png' title='bluePawn7'>
+</button>
+<button class='piece' onclick='pieceSelection("redPawn8");'>
+<img class='pieceIMG red Pawn' id='redPawn8' src='./red/red pawn.png' title='redPawn8'>
+</button>
+<button class='piece' onclick='pieceSelection("bluePawn8");'>
+<img class='pieceIMG blue Pawn' id='bluePawn8' src='./blue/blue pawn.png' title='bluePawn8'>
+</button>
+
+<span id="PromotedPawnsGoHere"></span>
+
+<div id="scoreboard" class="absolute">
+<p>It is currently <span id="ActivePlayer">Bludd</span>'s turn.</p>
+Information about piece selected (<span id="PieceSelected"></span>):<br>
+<span id="showValidMoves" style='overflow-y:scroll;'><br><br></span>
+<p>Bludd's latest victim: <span id="latestVictim"></span></p>
+<p>Blue sacrifices observed: <span id="blueSacrifices"></span><br>
+Red sacrifices observed: <span id="redSacrifices"></span></p>
+</div>
+<!--
+<img id='d8' src='./viking pics/d8-8.png' height='120' width='120' alt="8-sided die"
+title="8-sided die">
+-->
+
+<div id='messageLog' class='absolute'>
+<p id='messageInput'>
+<span>Enter message: </span>
+<input type="text" id="enterMessage" style="width:75%; height:100px; font-size: 16px;"></input>
+<button onclick="var speaker=activePlayer+' player'; printMsg(messageBox.value, speaker);">Submit</button>
+</p>
+<br><p class="msg" id="title" style="text-align:center; font-size:16px;"><b>Message Log</b></p>
+<span id="messages" class='msg'></span>
+</div>
+
+<button onclick="summonBludd(); this.style.display='none';" class="absolute button" 
+id="bluddSummon" 
+title="CLICK ME!!! NOW!!! AT LONG LAST, BLUDD SHALL BE RELEASED!!!">
+Summon Bludd, the Blood God (of Blood)!</button>
+
+<button onclick="Bludd.automove=false; Bludd.move();" 
+class="absolute button" id='bluddMove' 
+title="Click here to move Bludd if you can't move.
+You can also click here to turn off Bludd's automove feature.
+Want to turn automove back on? Type 'Bluddmove' in the message box.">
+Bludd moves...</button>
+
+<button onclick="Bludd.toggleMoveAssistant()" style="font-size:20px; 
+font-family: Calibri;" id="moveAssistant" class="absolute button" 
+title="If move assistant is turned on, pieces that can be sacrificed get pink borders
+and pieces that can kill get light green borders.">
+Turn <span id="moveAssistantStatus">off</span> the move assistant</button>
+
+<div class="popup" id="newGamePanel">
+<p style="align:center;">Choose a game mode</p>
+<button id="rampageMode" class="relative button" title="Bludd always moves! 
+Watch helplessly as he consumes everything in sight!" onclick="bluddAlwaysMoves=true; 
+document.getElementById('newGamePanel').style.display='none'; PlayerRotationIndex=2">
+Bludd Rampage Mode</button>
+
+<button id="derangedMode" class="relative button" 
+onclick="document.getElementById('newGamePanel').style.display='none';"
+title="The standard game. Players must move pieces into Bludd (sacrifice) if possible.
+If sacrifice is impossible, they must kill an opposing piece if possible.
+Whoever gets the most sacrifices recognized wins.
+Whenever you sacrifice a piece, there's a 50% chance the sacrifice is recognized.
+Whenever a piece kills another, Bludd randomly decides which player to give a point to.">
+Deranged Mode</button>
+
+<button id="saneMode" class='absolute button'
+onclick="document.getElementById('newGamePanel').style.display='none';
+gameMode.insaneMode=false;" 
+title="Normal chess, but with Bludd, the Blood God of Blood.">
+Sane Mode</button>
+</div>
+
+<div id="pawnPromotion" class="popup" style="display:none;">
+<p style="align:center;">Choose a piece to promote your pawn to</p>
+<button id="QueenButton" class="piece" onclick="replacePiece(getPieceByName(Bludd.pawnToPromote), 'Queen');">
+<img id="promQueen" class= "pieceIMG relative" src="./red/red queen.png" title="Promote to queen">
+</button>
+<button id="RookButton" class="piece" onclick="replacePiece(getPieceByName(Bludd.pawnToPromote), 'Rook');">
+<img id="promRook" class= "pieceIMG relative" src="./red/red rook.png" title="Promote to rook">
+</button>
+<button id="BishopButton" class="piece" onclick="replacePiece(getPieceByName(Bludd.pawnToPromote), 'Bishop');">
+<img id="promBishop" class= "pieceIMG relative" src="./red/red bishop.png" title="Promote to bishop">
+</button>
+<button id="KnightButton" class="piece" onclick="replacePiece(getPieceByName(Bludd.pawnToPromote), 'Knight');">
+<img id="promKnight" class= "pieceIMG relative" src="./red/red knight.png" title="Promote to knight">
+</button>
+</div>
+
+<script src="./scripts/bludgame.js"></script>
+</body>
+</html>
+
+<!--
+<button onclick="var PASS=passTurn(); activePlayer=PASS[0]; PlayerRotationIndex=PASS[1]" 
+class="absolute button" id='passTurn'>Pass the turn</button>
+
+<div id="pieceMoveInstructions">
+What piece do you want to move?
+<input type="text" id="pieceToMove"></input>
+<br>
+What row do you want to move to?
+<input type="text" id="newRow"></input>
+<br>
+What column do you want to move to?
+<input type="text" id="newCol"></input>
+<br>
+<button onclick="pieceMoveButton();">Move the piece</button> 
+</div>
+-->
