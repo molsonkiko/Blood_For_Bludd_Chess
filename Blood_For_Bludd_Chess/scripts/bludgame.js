@@ -592,7 +592,12 @@ function replacePiece(piece,pieceType) {
    document.getElementById(piece.name).title=piece.showName; 
    document.getElementById("pawnPromotion").style.display="none";
    printMsg("NOW I AM COMPLETE!", piece.showName);
-   //return endTurn();
+   // Even if Bludd automatically moves, his move was deferred until now that the pawn has been promoted.
+   if (activePlayer === 'Bludd' && Bludd.automove) {
+      var MOVE = Bludd.move();
+      activePlayer=MOVE[0];
+      PlayerRotationIndex=MOVE[1];
+   }
 }
 
 class Knight extends Piece {
